@@ -1,5 +1,5 @@
 <?php
 
-$conex = mysqli_connect("localhost","root","","formulario","administrador");
+$conex = mysqli_connect("localhost","root","","administrador");
 
 ?>

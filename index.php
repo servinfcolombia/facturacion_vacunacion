@@ -9,7 +9,7 @@
     
 </head>
 <body>
-    <form acction="procesar_formulario.php" method="post">
+    <form acction="send.php" method="post">
     <img src="vacunate_solo_imagen_pequeña.png" width="100">
     <br>
     <br>

@@ -1,0 +1,26 @@
+Copilot
+Para actualizar la carpeta web en el repositorio de GitHub con las últimas modificaciones, sigue estos pasos:
+
+Abrir la terminal:
+Abre la terminal o línea de comandos en tu computadora.
+Navegar al directorio del repositorio local:
+Utiliza el comando cd para moverte al directorio donde tienes clonado el repositorio facturacion_vacunacion. Por ejemplo:
+cd ruta/del/repo/facturacion_vacunacion
+
+Agregar los cambios al área de preparación:
+Ejecuta el siguiente comando para agregar todos los cambios al área de preparación:
+git add .
+
+Verificar el estado de los archivos (opcional):
+Si deseas ver qué archivos se han modificado, puedes ejecutar:
+git status
+
+Confirmar los cambios:
+Realiza un commit con un mensaje descriptivo para tus cambios:
+git commit -m "Mensaje descriptivo de las modificaciones"
+
+Subir los cambios al repositorio remoto (GitHub):
+Finalmente, utiliza el siguiente comando para subir los cambios al repositorio en GitHub:
+git push
+
+¡Listo! Los cambios deberían reflejarse en el repositorio web. Asegúrate de haber iniciado sesión en GitHub y tener los permisos adecuados para realizar la actualización. 🚀🔗

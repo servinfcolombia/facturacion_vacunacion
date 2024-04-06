@@ -58,6 +58,27 @@ git push
 ¡Listo! Los cambios deberían reflejarse en el repositorio web. Asegúrate de haber iniciado sesión en GitHub y tener los permisos adecuados para realizar la actualización. 🚀🔗
 
 =======================================================================================
+Creacion del entorno virtual
+
+cd \ruta\de\la\carpeta: Este comando cambia el directorio actual al que especificas después de cd. Debes reemplazar \ruta\de\la\carpeta con la ruta real de la carpeta en la que deseas trabajar.
+
+python -m venv env_sisvac: Este comando crea un entorno virtual llamado env_sisvac utilizando el módulo venv de Python. Un entorno virtual es un ambiente aislado que contiene una instalación de Python y sus dependencias, lo que te permite trabajar en proyectos con diferentes configuraciones de paquetes sin interferencias.
+
+.\env_sisvac\Scripts\activate: Este comando activa el entorno virtual que acabas de crear. Al activar el entorno virtual, tu terminal usará la instalación de Python y las dependencias dentro de ese entorno en lugar de las globales de tu sistema.
+
+pip freeze > requirements.txt: Este comando genera un archivo llamado requirements.txt que contiene una lista de todas las dependencias instaladas en tu entorno virtual junto con sus versiones. La salida de pip freeze es una lista de todos los paquetes instalados y sus versiones en un formato compatible con pip install.
+
+pip install -r requirements.txt: Este comando instala todas las dependencias listadas en el archivo requirements.txt. Al hacerlo, aseguras que cualquier persona que clone tu proyecto pueda instalar las mismas dependencias en su entorno virtual para trabajar en el proyecto sin problemas de compatibilidad.
+
+
+
+
+cd \ruta\de\la\carpeta.
+python -m venv env_sisvac // crea el entorno virtual llamado env_sisvac
+.\env_sisvac\Scripts\activate // activa el entorno virtual
+pip freeze > requirements.txt // creacion de archivo de relacion de dependencias
+pip install -r requirements.txt //actualizacion de la lista de dependencias.
+=======================================================================================
 
 pip install fastapi jinja2 SQLAlchemy uvicorn # Instala FastAPI Jinja SQLAlchemy uvicorn
 uvicorn main:app --reload

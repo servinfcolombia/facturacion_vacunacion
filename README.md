@@ -27,3 +27,103 @@ Sistema de facturacion de servicios de aplicacion de vacunas en colombia
    - Una vez que tu aplicación esté lista, considera opciones para su despliegue. Puedes optar por desplegarla en un servidor propio o utilizar plataformas de alojamiento en la nube como Heroku, AWS, o Google Cloud Platform.
 
 Recuerda siempre seguir las mejores prácticas de desarrollo de software y revisar la documentación oficial de FastAPI y las herramientas que utilices durante el desarrollo. ¡Buena suerte con tu proyecto!
+
+================================================================================
+
+Copilot
+Para actualizar la carpeta web en el repositorio de GitHub con las últimas modificaciones, sigue estos pasos:
+
+Abrir la terminal:
+Abre la terminal o línea de comandos en tu computadora.
+Navegar al directorio del repositorio local:
+Utiliza el comando cd para moverte al directorio donde tienes clonado el repositorio facturacion_vacunacion. Por ejemplo:
+cd ruta/del/repo/facturacion_vacunacion
+
+Agregar los cambios al área de preparación:
+Ejecuta el siguiente comando para agregar todos los cambios al área de preparación:
+git add .
+
+Verificar el estado de los archivos (opcional):
+Si deseas ver qué archivos se han modificado, puedes ejecutar:
+git status
+
+Confirmar los cambios:
+Realiza un commit con un mensaje descriptivo para tus cambios:
+git commit -m "Mensaje descriptivo de las modificaciones"
+
+Subir los cambios al repositorio remoto (GitHub):
+Finalmente, utiliza el siguiente comando para subir los cambios al repositorio en GitHub:
+git push
+
+¡Listo! Los cambios deberían reflejarse en el repositorio web. Asegúrate de haber iniciado sesión en GitHub y tener los permisos adecuados para realizar la actualización. 🚀🔗
+
+=======================================================================================
+
+pip install fastapi jinja2 SQLAlchemy uvicorn # Instala FastAPI Jinja SQLAlchemy uvicorn
+uvicorn main:app --reload
+
+(env_sisvac) E:\Google Drive 2\Binance\Sistema_Facturacion\facturacion_vacunacion>uvicorn main:app --reload
+INFO:     Will watch for changes in these directories: ['E:\\Google Drive 2\\Binance\\Sistema_Facturacion\\facturacion_vacunacion']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [10716] using StatReload
+INFO:     Started server process [11364]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:62603 - "GET / HTTP/1.1" 200 OK
+
+=====================================================================================
+
+Estructura de carpetas recomendada por la IA
+
+project_name/
+│
+├── app/
+│   ├── __init__.py
+│   ├── api/
+│   │   ├── __init__.py
+│   │   ├── routes.py
+│   │   └── schemas.py
+│   │
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── models.py
+│   │
+│   ├── templates/
+│   │   ├── base.html
+│   │   ├── crear_usuario.html
+│   │   ├── crear_venta.html
+│   │   └── registro_biologico.html
+│   │
+│   ├── static/                   # Directorio para archivos estáticos
+│   │   ├── images/               # Directorio para imágenes
+│   │   │   ├── image1.png
+│   │   │   └── image2.jpg
+│   │   └── css/                  # Directorio para archivos CSS (opcional)
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       └── database.py
+│
+├── migrations/
+│
+├── tests/
+│
+├── .env
+├── alembic.ini
+├── app.py
+├── requirements.txt
+└── README.md
+
+En esta estructura:
+
+El directorio app contiene el código de la aplicación, dividido en subdirectorios para diferentes propósitos como api, models, templates, y utils.
+api/routes.py contiene las definiciones de las rutas de la API utilizando FastAPI.
+models/models.py contiene las definiciones de los modelos de la base de datos utilizando SQLAlchemy.
+templates contiene las plantillas Jinja2 para las vistas HTML.
+utils/database.py contiene la configuración de la base de datos SQLAlchemy.
+migrations es un directorio opcional donde se pueden almacenar las migraciones de la base de datos generadas por herramientas como Alembic.
+tests es un directorio opcional para almacenar las pruebas.
+.env es un archivo para las variables de entorno.
+app.py es el punto de entrada para la aplicación FastAPI.
+requirements.txt es un archivo que contiene las dependencias del proyecto.
+README.md es un archivo con información sobre el proyecto.

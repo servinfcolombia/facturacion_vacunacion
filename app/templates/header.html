@@ -17,3 +17,17 @@
       </div>
     </div>
   </header>
+  <!-- Script para obtener la fecha y hora actual -->
+  <script>
+    function actualizarHora() {
+      var ahora = new Date();
+      var hora = ahora.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+      document.getElementById('fecha-hora').textContent = hora;
+    }
+
+    // Actualiza la hora cada minuto
+    setInterval(actualizarHora, 60000);
+
+    // Llama a la función una vez para mostrar la hora actual de inmediato
+    actualizarHora();
+  </script>
